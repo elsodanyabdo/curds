@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+        color: white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul{
+    list-style: none;
+}
+.curds{
+    width: 90%;
+    margin: auto;
+}
+h1{
+    text-decoration: underline;
+}
+.head{
+        text-transform: capitalize;
+    text-align: center;
+    margin: 20px 0;
+}
+h1 , 
+p  {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+/* input  */
+
+.input{
+    width: 100%;
+}
+input{
+    padding: 20px;
+    background-color: rgb(31, 31, 31);
+    border-radius : 5px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+input:focus{
+    outline: none;
+    padding: 25px;
+    background-color: rgb(14, 14, 14);
+}
+.input > input:first-child{
+    width: 100%;
+}
+.price {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.price input{
+    flex-basis: calc(100% / 5);
+    margin-right: 10px;
+}
+#total{
+    background-color: blue;
+    padding: 10px;
+}
+#total::before{
+    content: "Total: ";
+}
+input:nth-child(3) , 
+input:last-of-type,
+#submit{
+    width: 100%;
+}
+
+#submit{
+    height: 50px;
+    text-transform: capitalize;
+    color: white;
+    background-color : orange;
+    border : none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#submit:hover{
+    background-color: red;
+}
+.output{
+    margin-top: 50px;
+} 
+.output #search{
+        padding: 20px;
+    background-color: rgb(31, 31, 31);
+    border-radius : 5px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 15px;
+} 
+
+.output #search:focus{
+    outline: none;
+    padding: 25px;
+    background-color: rgb(14, 14, 14);
+}
+.curds .output .search-with{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.curds .output .search-with button{
+    flex-basis: calc(90% / 2);
+    background-color: orange;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.delAll{
+    margin-top: 50px;
+    width: 100%;
+        background-color: orange;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.curds .output .search-with button:hover,
+.delAll:hover{
+    background-color: red;
+}
+
+table   {
+    margin-top: 50px;
+    width:100%;
+}
+th{
+    text-transform: capitalize;
+    color: rgb(20, 248, 229);
+    padding-bottom: 20px;
+}
+
+table  td{
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+#update , #del{
+    padding: 8px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#update{
+        background-color: green;
+}
+#del{
+        background-color: red;
+}
+#update:hover{
+    background-color: rgb(10, 236, 67);
+}
+#del:hover{
+    background-color:  rgb(156, 0, 0) ;
+}
